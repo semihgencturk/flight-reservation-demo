@@ -50,3 +50,15 @@ flowchart TD
     J --> K[Success summary page /flight-success]
 ```
 
+## Screenshots
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 56 07" src="https://github.com/user-attachments/assets/efdd1d19-3311-425b-b294-caf8c5fa105e" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 56 31" src="https://github.com/user-attachments/assets/6525e93f-ffeb-445e-b54c-183ab497a671" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 57 00" src="https://github.com/user-attachments/assets/8cce869e-d2c2-46b5-ada3-04c68947af07" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 57 03" src="https://github.com/user-attachments/assets/6e37a34d-03fe-42c0-88d1-8c49af6618df" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 57 43" src="https://github.com/user-attachments/assets/ae44b7a2-d593-4dc5-88b1-f8ac60627b91" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 57 53" src="https://github.com/user-attachments/assets/ff340bc3-860c-4570-8bcd-5824210c6f66" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 58 33" src="https://github.com/user-attachments/assets/25be6582-2739-49e2-9a95-7c78109236b7" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 58 52" src="https://github.com/user-attachments/assets/8d39db9a-7ccd-411c-848b-4782eb6879f4" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 58 59" src="https://github.com/user-attachments/assets/17b418fc-1997-47ea-9b52-5402f1a1db7e" />
+<img width="20%" height="auto" alt="Screenshot 2025-10-24 at 06 59 11" src="https://github.com/user-attachments/assets/10b5e7b8-46f0-4ad2-b89c-e339a81ffb92" />
+
