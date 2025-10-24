@@ -1,0 +1,84 @@
+{
+  "landing": {
+    "title": "Flight Reservation Demo",
+    "subtitle": "Built with React, TypeScript, and Vite",
+    "description": "This demo shows a simple flight search and booking flow using modern frontend tools. Explore how state management, translations, and component design come together.",
+    "startButton": "Start Exploring",
+    "footer": "© 2025 Flight Reservation Demo"
+  },
+  "flightSearch": {
+    "hero": {
+      "title": "Hello",
+      "subtitle": "Where would you like to explore?"
+    },
+    "form": {
+      "originPlaceholder": "From",
+      "destinationPlaceholder": "To",
+      "datePlaceholder": "Date",
+      "selectionTitle": "Cabin and passenger selection",
+      "cabinClass": {
+        "economy": "Economy Class",
+        "business": "Business Class"
+      },
+      "passengerLabel": "Passenger"
+    },
+    "messages": {
+      "missingRoute": "Please fill in both origin and destination.",
+      "missingDate": "Please select a flight date.",
+      "noRoute": "We couldn't find any flights for this route. Try a different search.",
+      "noCabin": "No seats available in the selected cabin. Please choose a different class."
+    },
+    "result": {
+      "successTitle": "Flight found",
+      "errorTitle": "No flights found",
+      "dateLabel": "Date",
+      "route": "{{origin}} ({{originCode}}) → {{destination}} ({{destinationCode}})",
+      "departureLabel": "Departure",
+      "arrivalLabel": "Arrival",
+      "durationLabel": "Duration",
+      "cabinLabel": "Cabin class",
+      "passengerLabel_one": "Passenger",
+      "passengerLabel_other": "Passengers",
+      "totalLabel": "Total",
+      "close": "Close",
+      "viewResults": "View flight options"
+    }
+  },
+  "flightResults": {
+    "flight": "Flight",
+    "passengers": "Passengers",
+    "promoCode": "Apply promo code",
+    "promoDescription": "Use your promo code at checkout to unlock special fares.",
+    "promoRestriction": "Promo codes cannot be combined with other discounts.",
+    "sortCriteria": "Sort results by",
+    "economyPrice": "Lowest economy price",
+    "departureTime": "Earliest departure time",
+    "resultsTitle": "Available flights",
+    "noResults": "No flights match your search.",
+    "noAvailability": "No seats available.",
+    "modifySearch": "Modify search",
+    "perPassenger": "Per passenger",
+    "showDetails": "Show details",
+    "hideDetails": "Hide details",
+    "selectFare": "Select fare",
+    "confirmTitle": "Confirm Purchase",
+    "confirmMessage": "Do you want to complete the purchase for this flight?",
+    "confirmYes": "Yes, confirm",
+    "confirmNo": "No, go back",
+    "successTitle": "Booking Confirmed",
+    "successSubtitle": "Your tickets are ready!",
+    "successDetails": "Here is a summary of your trip:",
+    "successBack": "Back to home",
+    "successPromo": "50% promotion discount applied"
+  },
+  "navigation": {
+    "brand": "Flight Demo",
+    "flightSearch": "Flight Search",
+    "flightReservation": "Reservation",
+    "languageLabel": {
+      "en": "English",
+      "tr": "Türkçe"
+    },
+    "languageToggleAria": "Toggle language (current: {{language}})"
+  }
+}

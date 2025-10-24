@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+HUSKY_HELPER="$(dirname -- "$0")/_/husky.sh"
+if [ -f "$HUSKY_HELPER" ]; then
+  . "$HUSKY_HELPER"
+fi
+
+set -e
+
+echo "Running pre-commit checks..."
+
+if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo "Formatting staged files..."
+  npx lint-staged
+else
+  echo "Skipping lint-staged (no git repository detected)..."
+fi
+
+echo "Linting..."
+npm run lint
+
+echo "Checking formatting..."
+npm run format:check
+
+echo "Type checking..."
+npm run type-check
+
+echo "All checks passed!"

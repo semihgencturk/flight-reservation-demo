@@ -192,75 +192,87 @@ export function FlightSearchHero() {
   };
 
   return (
-    <div className="min-h-[50vh] bg-gradient-to-br from-[#1e3a5f] to-[#2d5a7b] flex flex-col items-center justify-center px-4 py-12">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-light text-white mb-2">
+    <div className="flex w-full max-w-5xl flex-col items-center gap-10 px-4 py-6 text-white sm:px-6">
+      <div className="space-y-4 text-center">
+        <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
           {t("flightSearch.hero.title")}
         </h1>
-        <p className="text-xl md:text-2xl font-light text-white/90">
+        <p className="mx-auto max-w-2xl text-base text-white/70 md:text-lg">
           {t("flightSearch.hero.subtitle")}
         </p>
       </div>
 
-      <div className="w-full max-w-6xl bg-[#4a5f7a]/80 backdrop-blur-sm rounded-lg p-4">
-        <div className="flex flex-col md:flex-row gap-3 items-stretch">
-          <FlightSearchField
-            icon={<Plane className="w-5 h-5 text-gray-600 rotate-45" />}
-            placeholder={t("flightSearch.form.originPlaceholder")}
-            value={searchData.origin}
-            onChange={(value) =>
-              setSearchData((prev) => ({
-                ...prev,
-                origin: value,
-              }))
-            }
-          />
+      <div className="relative w-full overflow-hidden rounded-3xl border border-white/15 bg-white/10 px-5 py-6 shadow-[0_35px_120px_rgba(8,20,43,0.65)] backdrop-blur-xl md:px-8 md:py-10">
+        <div aria-hidden className="pointer-events-none">
+          <div className="absolute -top-10 left-10 h-52 w-52 rounded-full bg-sky-400/20 blur-3xl" />
+          <div className="absolute -bottom-16 right-0 h-64 w-64 rounded-full bg-rose-500/15 blur-3xl" />
+        </div>
 
-          <FlightSearchField
-            icon={<Plane className="w-5 h-5 text-gray-600 -rotate-45" />}
-            placeholder={t("flightSearch.form.destinationPlaceholder")}
-            value={searchData.destination}
-            onChange={(value) =>
-              setSearchData((prev) => ({
-                ...prev,
-                destination: value,
-              }))
-            }
-          />
+        <div className="relative z-10 flex flex-col items-stretch gap-4 md:flex-row">
+          <div className="flex flex-1 flex-col gap-4 md:flex-row">
+            <FlightSearchField
+              icon={<Plane className="h-5 w-5 rotate-45 text-slate-500" />}
+              placeholder={t("flightSearch.form.originPlaceholder")}
+              value={searchData.origin}
+              onChange={(value) =>
+                setSearchData((prev) => ({
+                  ...prev,
+                  origin: value,
+                }))
+              }
+            />
 
-          <FlightSearchDatePicker
-            date={searchData.date}
-            locale={locale}
-            placeholder={t("flightSearch.form.datePlaceholder")}
-            onChange={(selectedDate) =>
-              setSearchData((prev) => ({ ...prev, date: selectedDate }))
-            }
-          />
+            <FlightSearchField
+              icon={<Plane className="h-5 w-5 -rotate-45 text-slate-500" />}
+              placeholder={t("flightSearch.form.destinationPlaceholder")}
+              value={searchData.destination}
+              onChange={(value) =>
+                setSearchData((prev) => ({
+                  ...prev,
+                  destination: value,
+                }))
+              }
+            />
+          </div>
 
-          <FlightSearchPassengerSelector
-            cabinClass={searchData.cabinClass}
-            passengers={searchData.passengers}
-            onCabinClassChange={(value) =>
-              setSearchData((prev) => ({ ...prev, cabinClass: value }))
-            }
-            onPassengersChange={(value) =>
-              setSearchData((prev) => ({ ...prev, passengers: value }))
-            }
-            labels={{
-              selectionTitle: t("flightSearch.form.selectionTitle"),
-              cabinClass: {
-                economy: t("flightSearch.form.cabinClass.economy"),
-                business: t("flightSearch.form.cabinClass.business"),
-              },
-              passenger: t("flightSearch.form.passengerLabel"),
-            }}
-          />
+          <div className="flex flex-1 flex-col gap-4 md:flex-row">
+            <FlightSearchDatePicker
+              date={searchData.date}
+              locale={locale}
+              placeholder={t("flightSearch.form.datePlaceholder")}
+              onChange={(selectedDate) =>
+                setSearchData((prev) => ({ ...prev, date: selectedDate }))
+              }
+            />
+
+            <FlightSearchPassengerSelector
+              cabinClass={searchData.cabinClass}
+              passengers={searchData.passengers}
+              onCabinClassChange={(value) =>
+                setSearchData((prev) => ({ ...prev, cabinClass: value }))
+              }
+              onPassengersChange={(value) =>
+                setSearchData((prev) => ({ ...prev, passengers: value }))
+              }
+              labels={{
+                selectionTitle: t("flightSearch.form.selectionTitle"),
+                cabinClass: {
+                  economy: t("flightSearch.form.cabinClass.economy"),
+                  business: t("flightSearch.form.cabinClass.business"),
+                },
+                passenger: t("flightSearch.form.passengerLabel"),
+              }}
+            />
+          </div>
 
           <Button
             onClick={handleSearch}
-            className="bg-[#c8102e] hover:bg-[#a00d25] text-white px-8 py-6 h-auto rounded-md"
+            className="h-auto rounded-2xl bg-primary px-6 py-5 text-base font-semibold text-primary-foreground transition-transform duration-200 hover:scale-[1.02] hover:bg-primary/90 md:px-8"
           >
-            <ChevronRight className="w-6 h-6" />
+            <span className="flex items-center gap-2">
+              {t("flightSearch.result.viewResults")}
+              <ChevronRight className="h-5 w-5" />
+            </span>
           </Button>
         </div>
       </div>

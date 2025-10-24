@@ -1,0 +1,32 @@
+# === Normalize line endings ===
+* text=auto eol=lf
+
+# === Treat these as text files ===
+*.js text
+*.ts text
+*.tsx text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+*.css text
+*.html text
+
+# === Treat these as binary (no diff) ===
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# === Prevent merge conflicts for lock files ===
+pnpm-lock.yaml merge=union
+
+# === Mark shell scripts executable ===
+*.sh text eol=lf

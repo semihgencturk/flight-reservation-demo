@@ -1,0 +1,84 @@
+{
+  "landing": {
+    "title": "Uçuş Rezervasyon Demoları",
+    "subtitle": "React, TypeScript ve Vite ile geliştirildi",
+    "description": "Bu demo, modern frontend araçlarıyla hazırlanmış basit bir uçuş arama ve rezervasyon akışını gösterir. Durum yönetimi, çeviri ve bileşen tasarımını birlikte keşfedin.",
+    "startButton": "Keşfetmeye Başla",
+    "footer": "© 2025 Uçuş Rezervasyon Demoları"
+  },
+  "flightSearch": {
+    "hero": {
+      "title": "Merhaba",
+      "subtitle": "Nereyi keşfetmek istersiniz?"
+    },
+    "form": {
+      "originPlaceholder": "Nereden",
+      "destinationPlaceholder": "Nereye",
+      "datePlaceholder": "Tarih",
+      "selectionTitle": "Kabin ve yolcu seçimi",
+      "cabinClass": {
+        "economy": "Ekonomi Sınıfı",
+        "business": "Business Sınıfı"
+      },
+      "passengerLabel": "Yolcu"
+    },
+    "messages": {
+      "missingRoute": "Lütfen kalkış ve varış noktalarını doldurun.",
+      "missingDate": "Lütfen bir uçuş tarihi seçin.",
+      "noRoute": "Aradığınız güzergâh için uygun uçuş bulunamadı. Lütfen farklı bir arama deneyin.",
+      "noCabin": "Seçtiğiniz kabin sınıfında müsait koltuk bulunamadı. Lütfen farklı bir sınıf seçin."
+    },
+    "result": {
+      "successTitle": "Uçuş bulundu",
+      "errorTitle": "Uçuş bulunamadı",
+      "dateLabel": "Tarih",
+      "route": "{{origin}} ({{originCode}}) → {{destination}} ({{destinationCode}})",
+      "departureLabel": "Kalkış",
+      "arrivalLabel": "Varış",
+      "durationLabel": "Süre",
+      "cabinLabel": "Kabin sınıfı",
+      "passengerLabel_one": "Yolcu",
+      "passengerLabel_other": "Yolcu",
+      "totalLabel": "Toplam",
+      "close": "Kapat",
+      "viewResults": "Uçuş seçeneklerini gör"
+    }
+  },
+  "flightResults": {
+    "flight": "Uçuş",
+    "passengers": "Yolcu",
+    "promoCode": "Promosyon kodu kullan",
+    "promoDescription": "Özel fiyatlara ulaşmak için ödeme adımında promosyon kodunuzu girin.",
+    "promoRestriction": "Promosyon kodları diğer indirimlerle birlikte kullanılamaz.",
+    "sortCriteria": "Sonuçları sırala",
+    "economyPrice": "En düşük ekonomi fiyatı",
+    "departureTime": "En erken kalkış zamanı",
+    "resultsTitle": "Uygun uçuşlar",
+    "noResults": "Aramanızla eşleşen uçuş bulunamadı.",
+    "noAvailability": "Müsait koltuk yok.",
+    "modifySearch": "Aramayı düzenle",
+    "perPassenger": "Yolcu başına",
+    "showDetails": "Detayları göster",
+    "hideDetails": "Detayları gizle",
+    "selectFare": "Uçuşu seç",
+    "confirmTitle": "Satın alma onayı",
+    "confirmMessage": "Bu uçuşu satın almayı tamamlamak ister misiniz?",
+    "confirmYes": "Evet, onayla",
+    "confirmNo": "Hayır, geri dön",
+    "successTitle": "Rezervasyon tamamlandı",
+    "successSubtitle": "Biletleriniz hazır!",
+    "successDetails": "Seyahat özetiniz:",
+    "successBack": "Ana sayfaya dön",
+    "successPromo": "%50 promosyon indirimi uygulandı"
+  },
+  "navigation": {
+    "brand": "Uçuş Demo",
+    "flightSearch": "Uçuş Arama",
+    "flightReservation": "Rezervasyon",
+    "languageLabel": {
+      "en": "İngilizce",
+      "tr": "Türkçe"
+    },
+    "languageToggleAria": "Dili değiştir (geçerli: {{language}})"
+  }
+}
